@@ -1,6 +1,7 @@
 "use strict";
 
 import React from 'react';
+import mainImage from '../assets/LogoDietViking.png';
 import { Link } from 'react-router-dom';
 
 import Page from './Page'
@@ -31,7 +32,7 @@ export class MainMenu extends React.Component {
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1">
-                                        <img class="img-responsive" src="http://res.cloudinary.com/djgvcqyow/image/upload/v1525368172/DrGerrit.png"></img>
+                                        <img class="img-responsive" src={mainImage}></img>
                                     </div>
                                     <SimpleLink to={`/dietplanning`}>
                                         <button id="ButtonDietPlanning" value="Back" class="btn btn-primary btn-lg col-md-12 col-xs-12">
